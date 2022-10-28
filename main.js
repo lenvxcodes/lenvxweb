@@ -10,15 +10,19 @@ window.addEventListener("keydown", (key) => {
 	return
 	}
 	if (promptpage === "help"){
-	alert("dr - page redirector. list - page list")
+	alert("dr - page redirector. list - page list. new - alerts what's new! src - source")
 	return
 	}
 	if (promptpage === "new"){
-	alert("whats new?: added prompt")
+	alert("whats new?: Added a new logo.")
 	return
-    	}		
+    }	
+	if (promptpage === "src"){
+		window.location.href = 'https://github.com/lenvxcodes/lenvxweb'
+		return
+	}	
 	else{
-	alert("Invalid Response")
+	alert("Invalid Response/Canceled")
 	return
 	}
     }
